@@ -9,6 +9,12 @@
     border: 2px solid var(--border-color);
     border-radius: 16px;
     padding: 24px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.course-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
 }
 
 .card-cover-image {
@@ -55,6 +61,12 @@
     color: var(--text-main);
 }
 
+.info-badge:hover
+{
+    background-color: var(--border-color);
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
 .btn-ingresar {
     display: block;
     width: 100%;
@@ -67,4 +79,9 @@
     color: var(--text-main);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+}
+
+.btn-ingresar:hover {
+    background-color: var(--border-color);
+    color: #ffffff;
 }
